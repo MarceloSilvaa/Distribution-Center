@@ -1,0 +1,17 @@
+ampl: include exB.run
+Gurobi 9.0.0: optimal solution; objective 989525.1756
+27708 simplex iterations
+intbasis trouble: GRBoptimize() failed.
+No dual variables returned.
+nr = 5
+
+:                  i        lat[i]    long[i]     :=
+Lisbon        Lisbon        38.7167   -9.13333
+Loule         Loule         37.1377   -8.01968
+Ourem         Ourem         39.6417   -8.5919
+Pedroucos     Pedroucos     41.1888   -8.58624
+Sernancelhe   Sernancelhe   40.8987   -7.49342
+;
+
+j [Ourem,Coimbra]   Coimbra
+;

@@ -1,0 +1,8 @@
+reset;
+model "exB.mod";
+data "trabalho.dat";
+option solver gurobi;
+solve;
+display nr;
+display {i in Cities: hasDC[i] = 1} i, {i in Cities: hasDC[i] = 1} lat[i], {i in Cities: hasDC[i] = 1} long[i];
+display {i in Cities, j in Cities: deliv[j] * d[i,j] * servesCity[i,j] = max {k in Cities, l in Cities} deliv[l] * d[k,l] * servesCity[k,l]} j;

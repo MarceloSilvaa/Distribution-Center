@@ -1,0 +1,17 @@
+ampl: include exA.run
+Gurobi 9.0.0: NonConvex 2
+Gurobi 9.0.0: optimal solution; objective 3856574.517
+6309 simplex iterations
+665 branch-and-cut nodes
+No dual variables returned.
+X = 39.2333
+
+Y = -8.68333
+
+j [*] :=
+Santarem  Santarem
+;
+
+j [*] :=
+Lisbon  Lisbon
+;

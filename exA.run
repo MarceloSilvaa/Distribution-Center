@@ -1,0 +1,9 @@
+reset;
+model "exA.mod";
+data "trabalho.dat";
+option solver gurobi;
+solve;
+display X;
+display Y;
+display {j in Cities: d[j] = min {i in Cities} d[i]} j;
+display {j in Cities: deliv[j]*d[j] = max {i in Cities} deliv[i]*d[i]} j;
